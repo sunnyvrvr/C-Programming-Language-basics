@@ -4,6 +4,8 @@ using namespace std;
 int main(void)
 {
 	// ------- 참조자
+	// 참조자는 기존에 선언된 변수에 붙이는 '별칭', 변수의 이름 
+
 	//int num1 = 1020;
 	//int& num2 = num1;
 	//cout << num1 << endl;

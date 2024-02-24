@@ -1,8 +1,8 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 void SwapByRef2(int& ref1, int& ref2);
 
-//------ÂüÁ¶ÀÚ¸¦ ÀÌ¿ëÇÑ Call-by-reference
+//------ì°¸ì¡°ìë¥¼ ì´ìš©í•œ Call-by-reference
 int main(void)
 {
 	int val1 = 10;

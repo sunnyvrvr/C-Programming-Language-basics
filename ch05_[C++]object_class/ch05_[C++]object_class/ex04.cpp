@@ -1,9 +1,9 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 int main(void)
 {
-	// ------- ÂüÁ¶ÀÚ
+	// ------- ì°¸ì¡°ì
 	//int num1 = 1020;
 	//int& num2 = num1;
 	//cout << num1 << endl;

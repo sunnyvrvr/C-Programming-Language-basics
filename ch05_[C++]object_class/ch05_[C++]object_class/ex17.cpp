@@ -1,7 +1,8 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
-//------ ¿¬»êÀÚ ¿À¹ö·Îµù
-/****************** Å¬·¡½º Á¤ÀÇ ******************/
+//------ ì—°ì‚°ì ì˜¤ë²„ë¡œë”©
+// ì—°ì‚°ì ì˜¤ë²„ë¡œë”© C++, íŒŒì´ì¬ ì¡´ì¬/ Java ì—†ìŒ
+/****************** í´ë˜ìŠ¤ ì •ì˜ *****************
 
 class Vector2 {
 public:
@@ -9,43 +10,43 @@ public:
     Vector2(float x, float y);
     float GetX() const;
     float GetY() const;
-    static Vector2 Sum(Vector2 a, Vector2 b);  // Á¤Àû ¸Ş¼­µå ¼±¾ğ
-    Vector2 Add(Vector2 other);                // ÀÏ¹İ ¸Ş¼­µå ¼±¾ğ
+    static Vector2 Sum(Vector2 a, Vector2 b);  // ì •ì  ë©”ì„œë“œ ì„ ì–¸
+    Vector2 Add(Vector2 other);                // ì¼ë°˜ ë©”ì„œë“œ ì„ ì–¸
 
 private:
     float x, y;
 };
-Vector2 Sum(Vector2 a, Vector2 b);             // Àü¿ª ÇÔ¼ö ¼±¾ğ
+Vector2 Sum(Vector2 a, Vector2 b);             // ì „ì—­ í•¨ìˆ˜ ì„ ì–¸
 
-/****************** main ÇÔ¼ö ******************/
+/****************** main í•¨ìˆ˜ ******************/
 
 int main() {
     Vector2 a(2, 3), b(5, 6);
-    Vector2 c1 = Sum(a, b);           // Àü¿ª ÇÔ¼ö È£Ãâ
-    Vector2 c2 = Vector2::Sum(a, b);  // Á¤Àû ¸Ş¼­µå È£Ãâ
-    Vector2 c3 = a.Add(b);            // ÀÏ¹İ ¸Ş¼­µå È£Ãâ
+    Vector2 c1 = Sum(a, b);           // ì „ì—­ í•¨ìˆ˜ í˜¸ì¶œ
+    Vector2 c2 = Vector2::Sum(a, b);  // ì •ì  ë©”ì„œë“œ í˜¸ì¶œ
+    Vector2 c3 = a.Add(b);            // ì¼ë°˜ ë©”ì„œë“œ í˜¸ì¶œ
 
     cout << "c1 = (" << c1.GetX() << ", " << c1.GetY() << ")" << endl;
     cout << "c2 = (" << c2.GetX() << ", " << c2.GetY() << ")" << endl;
     cout << "c3 = (" << c3.GetX() << ", " << c3.GetY() << ")" << endl;
 }
 
-/****************** ÇÔ¼ö Á¤ÀÇ ******************/
+/****************** í•¨ìˆ˜ ì •ì˜ ******************/
 
 Vector2::Vector2() : x(0), y(0) {}
 Vector2::Vector2(float x, float y) : x(x), y(y) {}
 float Vector2::GetX() const { return x; }
 float Vector2::GetY() const { return y; }
-// Á¤Àû ¸Ş¼­µå Á¤ÀÇ
-// Tip: Á¤Àû ¸Ş¼­µåÀÇ Á¤ÀÇ¿¡¼­´Â static Å°¿öµå¸¦ ºÙÀÏ ÇÊ¿ä°¡ ¾ø´Ù.
+// ì •ì  ë©”ì„œë“œ ì •ì˜
+// Tip: ì •ì  ë©”ì„œë“œì˜ ì •ì˜ì—ì„œëŠ” static í‚¤ì›Œë“œë¥¼ ë¶™ì¼ í•„ìš”ê°€ ì—†ë‹¤.
 Vector2 Vector2::Sum(Vector2 a, Vector2 b) {
     return Vector2(a.x + b.x, a.y + b.y);
 }
-// ÀÏ¹İ ¸Ş¼­µå Á¤ÀÇ
+// ì¼ë°˜ ë©”ì„œë“œ ì •ì˜
 Vector2 Vector2::Add(Vector2 other) {
     return Vector2(x + other.x, y + other.y);
 }
-// Àü¿ª ÇÔ¼ö Á¤ÀÇ
+// ì „ì—­ í•¨ìˆ˜ ì •ì˜
 Vector2 Sum(Vector2 a, Vector2 b) {
     return Vector2(a.GetX() + b.GetX(), a.GetY() + b.GetY());
 }

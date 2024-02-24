@@ -1,10 +1,10 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 class Animal {
 public:
 	void Breathe() {
-		cout << "¼ûÀ» ½®´Ù." << endl;
+		cout << "ìˆ¨ì„ ì‰°ë‹¤." << endl;
 	}
 	int age;
 };
@@ -12,14 +12,14 @@ public:
 class Dog : public Animal {
 public:
 	void Walk() {
-		cout << "°È´Â´Ù." << endl;
+		cout << "ê±·ëŠ”ë‹¤." << endl;
 	}
 };
 
 class Sparrow : public Animal {
 public:
 	void Fly() {
-		cout << "³­´Ù." << endl;
+		cout << "ë‚œë‹¤." << endl;
 	}
 };
 

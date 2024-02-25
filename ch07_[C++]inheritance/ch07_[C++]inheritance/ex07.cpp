@@ -1,6 +1,6 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
-// ¿À¹ö¶óÀÌµù
+// ì˜¤ë²„ë¼ì´ë”©
 class Base {
 public:
 	int a = 10;
